@@ -1,0 +1,218 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #fff; /* Fundo branco */
+}
+
+/* Navbar */
+.navbar {
+    display: flex; /* Usando flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente os itens da navbar */
+    justify-content: space-between; /* Mantém o logo à esquerda e os itens à direita */
+    padding: 10px 20px; /* Ajuste o padding para diminuir o espaço vertical */
+    background-color: #fff; /* Fundo da navbar branco */
+    color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.logo {
+    display: flex; /* Usar flexbox para alinhar a imagem e o texto */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.logo-image {
+    width: 40px; /* Largura da imagem, ajuste conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+/* Estilo do logo */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold; /* Agora o texto está em negrito */
+}
+
+.navbar .logo a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Estilo do menu de navegação */
+.nav-items {
+    display: flex; /* Usar flexbox para a navegação */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-grow: 1; /* Permite que o nav cresça e ocupe o espaço */
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex; /* Mantém os itens em linha */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin-right: 150px;
+}
+
+.nav-items ul li {
+    margin: 0 80px; /* Espaçamento entre os itens */
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-items ul li a:hover {
+    color: #6f42c1; /* Cor roxa ao passar o mouse */
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin-top: 80px; /* Espaço para a navbar */
+}
+
+/* Adicionando a animação ao conteúdo da hero */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    opacity: 0; /* Inicia invisível */
+    transform: translateY(20px); /* Inicia levemente abaixo */
+    animation: fadeInUp 0.8s forwards; /* Chama a animação */
+}
+
+/* Define a animação de fade e movimento */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* Torna visível */
+        transform: translateY(0); /* Move para a posição original */
+    }
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-content h1 span {
+    color: #eae0d5;
+    font-weight: 300;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.cta-button {
+    margin-top: 20px;
+    background: #fff; /* Fundo branco */
+    color: #333; /* Cor do texto */
+    text-decoration: none;
+    padding: 10px 25px; /* Espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    border: 1px solid #fff; /* Borda branca */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Transição suave */
+    margin-left: 300px; /* Margem esquerda */
+    transform: translateY(0); /* Posição inicial */
+}
+
+.cta-button:hover {
+    background: transparent; /* Fundo permanece branco ao passar o mouse */
+    color: #ffffff; /* Muda a cor do texto ao passar o mouse */
+    transform: translateY(-3px); /* Levanta o botão ao passar o mouse */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar nav ul li {
+        margin-left: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+/* Navbar */
+.navbar {
+    /* ... seu código existente ... */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-20px); /* Move para cima */
+    animation: fadeIn 0.5s forwards; /* Animação de entrada */
+}
+
+/* Animação para a navbar */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo do menu de navegação */
+.nav-items ul li {
+    margin: 0 80px; /* Espaçamento entre os itens */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(-10px); /* Move para cima */
+    animation: slideIn 0.5s forwards; /* Animação de entrada */
+    animation-delay: calc(0.1s * var(--i)); /* Delay individual para cada item */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-items ul li a {
+    /* ... seu código existente ... */
+    position: relative; /* Para o efeito de hover */
+}
+
+.nav-items ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #6f42c1; /* Cor da linha */
+    left: 0;
+    bottom: -5px; /* Posição abaixo do texto */
+    transform: scaleX(0); /* Começa invisível */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.nav-items ul li a:hover::after {
+    transform: scaleX(1); /* Aparece ao passar o mouse */
+}
