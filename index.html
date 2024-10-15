@@ -10,10 +10,10 @@
 <body>
     <nav class="navbar">
         <div class="logo">
-            <img src="icon-tech.png" alt="Logo" class="logo-image"> <!-- Atualize o caminho da imagem -->
+            <img src="icon-tech.png" alt="Logo" class="logo-image">
             <a href="#">TechConnect</a>
         </div>
-        <div class="nav-items"> <!-- Novo contêiner para os itens de navegação -->
+        <div class="nav-items">
             <ul>
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -24,15 +24,34 @@
 
     <div class="hero">
         <div class="hero-content">
-            <h1>Seja Bem Vindo a <span>TechConnect</span></h1>
+            <h1>Seja Bem-Vindo à <span>TechConnect</span></h1>
             <p>Sua porta de entrada para o mundo da tecnologia.</p>
             <a href="#services" class="cta-button">Iniciar</a>
         </div>
     </div>
-    <div>
+
+    <hr>
+
+    <!-- Primeiro Cenário -->
+    <div class="scenario-container">
         <h1>Primeiro Cenário</h1>
         <h2>Custos</h2>
-        <iframe src="planilha.html" width="100%" height="500px" style="border: none;"></iframe>
+        <div class="iframe-container">
+            <iframe src="cenario1.html" class="styled-iframe"></iframe>
+        </div>
     </div>
+
+    <!-- Segundo Cenário -->
+    <div class="scenario-container">
+        <h1>Segundo Cenário</h1>
+        <h2>Custos</h2>
+        <div class="iframe-container">
+            <iframe src="cenario2.html" class="styled-iframe"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechConnect. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

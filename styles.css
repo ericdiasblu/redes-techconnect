@@ -8,8 +8,11 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background: #fff; /* Fundo branco */
+    background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%);
+    min-height: 100vh; /* Garante que o fundo cubra a altura total da página */
+    margin: 0; /* Remove margens padrão */
 }
+
 
 /* Navbar */
 .navbar {
@@ -81,7 +84,6 @@ body {
 /* Hero Section */
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -215,4 +217,59 @@ body {
 
 .nav-items ul li a:hover::after {
     transform: scaleX(1); /* Aparece ao passar o mouse */
+}
+
+.scenario {
+    margin: 2px 20px; /* Margem em torno da seção */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.scenario h1, .scenario h2 {
+    color: #ffffff; /* Cor do texto dos títulos */
+}
+
+.scenario h1 {
+    text-align: center;
+}
+
+/* Contêiner do cenário */
+.scenario-container {
+    text-align: center; /* Centraliza o conteúdo */
+    padding: 50px 20px; /* Adiciona espaço interno */
+    color: #ffffff; /* Cor do texto para o fundo escuro */
+}
+
+/* Título do cenário */
+.scenario-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.scenario-container h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 300;
+    color: #eae0d5;
+}
+
+/* Estilização do iframe */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa as bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco ao redor do iframe */
+}
+
+.styled-iframe {
+    width: 100%;
+    height: 200px; /* Ajuste conforme necessário */
+    border: none; /* Remove borda padrão */
+    border-radius: 10px; /* Bordas arredondadas do iframe */
 }
