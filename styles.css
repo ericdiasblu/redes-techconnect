@@ -8,7 +8,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%);
+    background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%); /* Gradiente de fundo */
     min-height: 100vh; /* Garante que o fundo cubra a altura total da página */
     margin: 0; /* Remove margens padrão */
 }
@@ -272,4 +272,13 @@ body {
     height: 200px; /* Ajuste conforme necessário */
     border: none; /* Remove borda padrão */
     border-radius: 10px; /* Bordas arredondadas do iframe */
+}
+
+footer {
+    text-align: center; /* Centraliza o texto do footer */
+    padding: 20px 0; /* Espaço interno */
+    background: #ffffff; /* Cor de fundo do footer */
+    opacity: 90%;
+    color: black; /* Cor do texto */
+    margin-top: 40px; /* Espaço acima do footer */
 }
