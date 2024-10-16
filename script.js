@@ -1,10 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-document.addEventListener("DOMContentLoaded", function() {
-  AOS.init();
-});
-
 document.querySelectorAll('.nav-items a, #start-button').forEach(link => {
   link.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
