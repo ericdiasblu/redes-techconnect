@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="icon-tech.png">    
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>TechConnect</title>
 </head>
 <body>
@@ -21,9 +22,45 @@
             </ul>
         </div>
     </nav>
+
+    <div class="about-section">
+        <h1>Sobre o Projeto</h1>
+        <p>
+            Bem-vindo ao <strong>TechConnect</strong>, um projeto desenvolvido com o objetivo de explorar e apresentar soluções de redes de computadores utilizando a plataforma <strong>Cisco Packet Tracer</strong>. Neste trabalho, abordamos dois cenários práticos: um ambiente <strong>residencial</strong> e um <strong>comércio de médio porte</strong>. Cada cenário foi planejado e implementado com base em requisitos reais de infraestrutura de rede, considerando aspectos como <strong>segurança</strong>, <strong>desempenho</strong> e <strong>custo-benefício</strong>.
+        </p>
+
+        <div class="cards-container">
+            <div class="card" onclick="showText('residential')">
+                <div class="card-info">
+                    <i class="icon fa fa-home"></i> <!-- Ícone Font Awesome -->
+                    <p class="title">Cenário Residencial</p>
+                </div>
+            </div>
+            <div class="card" onclick="showText('commercial')">
+                <div class="card-info">
+                    <i class="icon fa fa-building"></i> <!-- Ícone Font Awesome para Comercial -->
+                    <p class="title">Cenário Comercial</p>
+                </div>
+            </div>
+            <div class="card" onclick="showText('costs')">
+                <div class="card-info">
+                    <i class="icon fa fa-chart-bar"></i> <!-- Ícone Font Awesome para Custos -->
+                    <p class="title">Custos e Eficiência</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="text-display" class="text-display">
+            <p id="residential-text" class="hidden">No ambiente residencial, o foco foi criar uma rede doméstica segura e eficiente, capaz de suportar as necessidades de uma casa moderna.  Além de garantir a conectividade dos dispositivos, levamos em consideração o controle de acesso, visando a proteção de dados e a privacidade dos usuários.</p>
+            <p id="commercial-text" class="hidden"> No cenário do comércio de médio porte, o desafio foi maior: projetar uma rede robusta que atendesse às demandas de um ambiente corporativo. Neste cenário, foi essencial otimizar o <strong>tráfego de dados</strong> e garantir a <strong>resiliência da rede</strong> para evitar interrupções nas operações.</p>
+            <p id="costs-text" class="hidden"> Além da implementação técnica, realizamos um estudo detalhado dos <strong>custos de implementação</strong>, comparando diversas soluções de hardware e software. O objetivo foi encontrar um equilíbrio entre <strong>eficiência de rede</strong> e <strong>custo total</strong>, permitindo que as soluções propostas sejam viáveis tanto no cenário residencial quanto comercial.</p>
+        </div>
+    </div>
+
     <footer>
         <p>&copy; 2024 TechConnect. Todos os direitos reservados.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="about-script.js"></script>
 </body>
+    
 </html>
