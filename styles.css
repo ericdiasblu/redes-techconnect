@@ -282,3 +282,18 @@ footer {
     color: black; /* Cor do texto */
     margin-top: 40px; /* Espaço acima do footer */
 }
+
+.imagem-cenario {
+    width: 100%; /* Ajusta a imagem para ocupar 100% da largura do contêiner */
+    max-width: 1000px; /* Limita a largura máxima */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
+    display: block; /* Alinha a imagem como um bloco */
+    margin: 20px auto; /* Centraliza a imagem com margem */
+}
+
+.imagem-cenario:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente a imagem ao passar o mouse */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
