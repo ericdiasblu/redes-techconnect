@@ -63,7 +63,7 @@ body {
     list-style: none;
     display: flex; /* Mantém os itens em linha */
     align-items: center; /* Alinha verticalmente os itens */
-    margin-right: 150px;
+    margin-right: 165px;
 }
 
 .nav-items ul li {
@@ -79,6 +79,56 @@ body {
 
 .nav-items ul li a:hover {
     color: #6f42c1; /* Cor roxa ao passar o mouse */
+}
+
+.titulo-descricao {
+    font-size: 1.5em; /* Tamanho maior da fonte */
+    color: #2980b9; /* Cor mais vibrante */
+    border-bottom: 2px solid #1f58d4; /* Linha inferior */
+    padding-bottom: 10px; /* Espaço abaixo do texto */
+    margin-bottom: 40px; /* Espaço acima do título */
+    text-align: center; /* Alinhamento à esquerda */
+    font-weight: 700; /* Negrito */
+    text-transform: uppercase; /* Letras maiúsculas */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.device-description {
+    margin: 20px 0;
+    background-color: #f8f9fa; /* Fundo suave */
+    opacity: 90%;
+    padding: 15px;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.device-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #3498db; /* Linha de destaque à esquerda */
+    transition: transform 0.2s; /* Efeito de transição */
+}
+
+.device-item:hover {
+    transform: translateY(-2px); /* Efeito ao passar o mouse */
+}
+
+.device-item strong {
+    display: block;
+    color: #2980b9; /* Cor do texto do título */
+    font-size: 1.1em; /* Tamanho da fonte */
+    margin-bottom: 5px;
+    text-align: left;
+
+}
+
+.device-item p {
+    margin: 0;
+    color: #000000; /* Cor do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    text-align: left;
 }
 
 /* Hero Section */
@@ -255,21 +305,10 @@ body {
 }
 
 /* Estilização do iframe */
-.iframe-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    border-radius: 15px; /* Bordas arredondadas */
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa as bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
-    background-color: #ffffff; /* Fundo branco ao redor do iframe */
-}
 
 .styled-iframe {
     width: 100%;
-    height: 200px; /* Ajuste conforme necessário */
+    height: 400px; /* Ajuste conforme necessário */
     border: none; /* Remove borda padrão */
     border-radius: 10px; /* Bordas arredondadas do iframe */
 }
