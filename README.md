@@ -52,5 +52,5 @@
 
 ## 🌐 Como Acessar
 
-Clique aqui e descubra o mundo TechConnect: [TechConnect](https://ericdiasblu.github.io/slides-reveal.js/) 🌟.
+Clique aqui e descubra o mundo TechConnect: [TechConnect](https://redes-techconnect.vercel.app/) 🌟.
 
