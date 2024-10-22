@@ -13,6 +13,15 @@ body {
     margin: 0; /* Remove margens padrão */
 }
 
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Garante que o vídeo fique atrás do conteúdo */
+  }
 
 /* Navbar */
 .navbar {
@@ -401,4 +410,8 @@ footer {
 
 #fullscreenButton:hover {
     transform: scale(1.5); /* Aumenta o botão 50% */
+}
+
+.naoquerofundo {
+    background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%); /* Gradiente de fundo */
 }

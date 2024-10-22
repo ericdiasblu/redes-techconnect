@@ -10,6 +10,8 @@
     <title>TechConnect</title>
 </head>
 <body>
+
+    
     <nav class="navbar">
         <div class="logo">
             <img src="icon-tech.png" alt="Logo" class="logo-image">
@@ -24,8 +26,16 @@
         </div>
     </nav>
 
+     <!-- Video de fundo -->
+     <video autoplay muted loop id="video-background">
+        <source src="wallpaper.mp4" type="video/mp4">
+      </video>
+
     <div class="hero">
+        
+        
         <div class="hero-content">
+            
             <h1>Seja Bem-Vindo à <span>TechConnect</span></h1>
             <p>Sua porta de entrada para o mundo da tecnologia.</p>
             <a href="#iframe-section" class="cta-button" id="start-button">Iniciar</a>
@@ -33,11 +43,13 @@
     </div>
 
     <hr>
+    <div class="naoquerofundo">
     <div id="iframe-section">
         <iframe class="iframe-slide" id="zoomable-iframe" src="https://ericdiasblu.github.io/slides-reveal.js/" title="Apresentação de Slides"></iframe>
         <button id="fullscreenButton"><i class="fas fa-expand"></i></button>
     </div>
     <hr>
+    
     <div class="mapBox">
         <h1>Localização dos Cenários</h1>
         <iframe src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCWnyDXD05sUl7TBcHdSYKOCMXh6Cg64Gs&origin=-26.92413346828219,-49.06390800206416&destination=-26.921135230616578,-49.06338897959263" 
@@ -135,6 +147,7 @@
     <footer>
         <p>&copy; 2024 TechConnect. Todos os direitos reservados.</p>
     </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
