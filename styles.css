@@ -83,10 +83,10 @@ body {
 
 .titulo-descricao {
     font-size: 1.5em; /* Tamanho maior da fonte */
-    color: #2980b9; /* Cor mais vibrante */
+    color: #ffffff; /* Cor mais vibrante */
     border-bottom: 2px solid #1f58d4; /* Linha inferior */
     padding-bottom: 10px; /* Espaço abaixo do texto */
-    margin-bottom: 40px; /* Espaço acima do título */
+    margin-top: 60px;
     text-align: center; /* Alinhamento à esquerda */
     font-weight: 700; /* Negrito */
     text-transform: uppercase; /* Letras maiúsculas */
@@ -96,7 +96,7 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 .device-description {
-    margin: 20px 0;
+    margin: 50px 0;
     background-color: #f8f9fa; /* Fundo suave */
     opacity: 90%;
     padding: 15px;
@@ -330,6 +330,7 @@ footer {
     transition: transform 0.3s, box-shadow 0.3s; /* Transições suaves */
     display: block; /* Alinha a imagem como um bloco */
     margin: 20px auto; /* Centraliza a imagem com margem */
+    margin-top: 80px;
 }
 
 .imagem-cenario:hover {
@@ -347,7 +348,7 @@ footer {
     border: 2px solid #000; /* Borda de 2px sólida e preta */
     border-radius: 8px; /* Bordas arredondadas, se desejado */
     overflow: hidden; /* Garante que o iframe não exceda a borda */
-    margin: 20px auto 20px; /* Adiciona uma margem superior de 20px e centraliza */
+    margin: 40px auto 40px; /* Adiciona uma margem superior de 20px e centraliza */
 }
 
 .mapBox iframe {
@@ -365,8 +366,8 @@ footer {
     font-size: 16px; /* Tamanho da fonte */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
     transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    
 }
-
 .button-download:hover {
     color: #000000;
     background-color: #ffffff; /* Cor ao passar o mouse */
