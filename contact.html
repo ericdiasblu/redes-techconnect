@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon-tech.png">    
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>TechConnect</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #6f42c1 30%, #4fa7ec 90%);
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-image {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .logo a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Estilo do menu de navegação */
+        .nav-items {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .nav-items ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-right: 150px;
+        }
+
+        .nav-items ul li {
+            margin: 0 80px;
+        }
+
+        .nav-items ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-items ul li a:hover {
+            color: #6f42c1;
+        }
+
+        /* Seção de Contato */
+        .contact-section {
+            max-width: 800px;
+            margin: 80px auto; /* Espaço acima para a navbar */
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #6f42c1;
+            margin-bottom: 20px;
+        }
+
+        .collaborator {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+
+        .collaborator h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .collaborator p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #6f42c1;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #4fa7ec;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #ffffff;
+            opacity: 90%;
+            color: black;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="icon-tech.png" alt="Logo" class="logo-image">
+            <a href="#">TechConnect</a>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="contact-section" id="contact">
+        <h1>Contato</h1>
+        <div class="collaborator">
+            <h2>Eric Dias</h2>
+            <p>Email: eric_dias@estudante.sesisenai.org.br</p>
+            <p>Telefone: (47) 9976-9152</p>
+            <div class="social-links">
+                <a href="https://instagram.com/ericnoites" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/colaborador1" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="collaborator">
+            <h2>Matheus Westphal Lima</h2>
+            <p>Email: matheus_lima4@estudante.sesisenai.org.br</p>
+            <p>Telefone: (47) 8896-2643</p>
+            <div class="social-links">
+                <a href="https://instagram.com/matheuswlima7" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/colaborador2" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="collaborator">
+            <h2>Max Augusto Leal da Silva</h2>
+            <p>Email: max_a_silva@estudante.sesisenai.org.br</p>
+            <p>Telefone: (47) 8896-1030</p>
+            <div class="social-links">
+                <a href="https://instagram.com/max.a.leal" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/in/max-a-leal-da-silva" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechConnect. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
