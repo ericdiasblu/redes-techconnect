@@ -355,3 +355,20 @@ footer {
     height: 100%;
     border: none; /* Remove a borda padrão do iframe */
 }
+
+.button-download {
+    background-color: transparent; /* Cor de fundo */
+    color: #EAE0D5; /* Cor do texto */
+    border-radius: 5px; /* Bordas arredondadas */
+    border-color: white;
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+.button-download:hover {
+    color: #000000;
+    background-color: #ffffff; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
