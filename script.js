@@ -18,3 +18,19 @@ document.querySelectorAll('.nav-items a, #start-button').forEach(link => {
         }
     });
 });
+
+ // Função para entrar em tela cheia
+ const fullscreenButton = document.getElementById('fullscreenButton');
+ const myIframe = document.getElementById('zoomable-iframe');
+
+ fullscreenButton.addEventListener('click', () => {
+     if (myIframe.requestFullscreen) {
+         myIframe.requestFullscreen();
+     } else if (myIframe.mozRequestFullScreen) { // Firefox
+         myIframe.mozRequestFullScreen();
+     } else if (myIframe.webkitRequestFullscreen) { // Chrome, Safari e Opera
+         myIframe.webkitRequestFullscreen();
+     } else if (myIframe.msRequestFullscreen) { // IE/Edge
+         myIframe.msRequestFullscreen();
+     }
+ });

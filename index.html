@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="icon-tech.png">    
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <title>TechConnect</title>
-    <style>
-        /* Estilo para ajustar o iframe ao tamanho da página */
-        iframe {
-            width: 100vw;
-            height: 100vh;
-            border: none; /* Remove bordas do iframe */
-        }
-    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -34,18 +28,18 @@
         <div class="hero-content">
             <h1>Seja Bem-Vindo à <span>TechConnect</span></h1>
             <p>Sua porta de entrada para o mundo da tecnologia.</p>
-            <a href="#iframe-section" class="cta-button" id="start-button">Iniciar</a> <!-- Alterado aqui -->
+            <a href="#iframe-section" class="cta-button" id="start-button">Iniciar</a>
         </div>
     </div>
 
     <hr>
     <div id="iframe-section">
-        <iframe id="zoomable-iframe" src = "https://ericdiasblu.github.io/slides-reveal.js/" title="Apresentação de Slides"></iframe>
+        <iframe class="iframe-slide" id="zoomable-iframe" src="https://ericdiasblu.github.io/slides-reveal.js/" title="Apresentação de Slides"></iframe>
+        <button id="fullscreenButton"><i class="fas fa-expand"></i></button>
     </div>
     <hr>
     <div class="mapBox">
         <h1>Localização dos Cenários</h1>
-
         <iframe src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyCWnyDXD05sUl7TBcHdSYKOCMXh6Cg64Gs&origin=-26.92413346828219,-49.06390800206416&destination=-26.921135230616578,-49.06338897959263" 
             style="border:0;" 
             allowfullscreen="" 
@@ -53,96 +47,95 @@
         </iframe>
     </div>
     
-    
     <hr>
     <!-- Primeiro Cenário -->
-<div class="scenario-container" id="cenario1">
-    <h1>Cenário Residencial</h1>
-    <a href="image-cenario1.png" download>
-        <button class="button-download">Baixar Imagem</button>
-    </a>
-    <div>
-        <img src="image-cenario1.png" alt="Descrição da imagem" class="imagem-cenario">
+    <div class="scenario-container" id="cenario1">
+        <h1>Cenário Residencial</h1>
+        <a href="image-cenario1.png" download>
+            <button class="button-download">Baixar Imagem</button>
+        </a>
+        <div>
+            <img src="image-cenario1.png" alt="Descrição da imagem" class="imagem-cenario">
+        </div>
+        
+        <h2 class="titulo-descricao">Descrição de Cada Aparelho do Cenário Residencial:</h2>
+        <div class="device-description">
+            <div class="device-item">
+                <strong>HomeRouter-PT-AC (Wireless Router0 e Wireless Router1):</strong>
+                <p>Roteadores sem fio que servem como o ponto central de conexão para os outros dispositivos da rede. Eles gerenciam o tráfego de dados entre os dispositivos e permitem o acesso à internet.</p>
+            </div>
+            <div class="device-item">
+                <strong>Laptop-PT (Laptop0 e Laptop1):</strong>
+                <p>Laptops conectados via Wi-Fi ao roteador, que podem ser usados para navegar na internet, acessar serviços em nuvem, e outras atividades de computação.</p>
+            </div>
+            <div class="device-item">
+                <strong>PC-PT (PC0 e PC1):</strong>
+                <p>Computadores de mesa conectados à rede (via cabo) para atividades como navegação, trabalho, ou uso de software.</p>
+            </div>
+            <div class="device-item">
+                <strong>SMARTPHONE-PT (Smartphone3, Smartphone3(1), Smartphone3(2)):</strong>
+                <p>Representações de smartphones conectados via Wi-Fi ao roteador. Esses dispositivos podem estar sendo usados para comunicação (como redes sociais ou mensagens), navegação, ou controle de dispositivos inteligentes.</p>
+            </div>
+            <div class="device-item">
+                <strong>TV-PT (TV5, TV6):</strong>
+                <p>Televisores conectados à rede, provavelmente usados para streaming de vídeos ou outras atividades relacionadas ao entretenimento.</p>
+            </div>
+            <div class="device-item">
+                <strong>TabletPC-PT (Tablet PC1):</strong>
+                <p>Um tablet conectado via Wi-Fi, usado para navegação, leitura, ou controle de outros dispositivos da casa.</p>
+            </div>
+        </div>
+        <h2>Custos</h2>
+        <div>
+            <iframe src="cenario1.html" class="styled-iframe"></iframe>
+        </div>
     </div>
-    
-    <h2 class="titulo-descricao">Descrição de Cada Aparelho do Cenário Residencial:</h2>
-    <div class="device-description">
-        <div class="device-item">
-            <strong>HomeRouter-PT-AC (Wireless Router0 e Wireless Router1):</strong>
-            <p>Roteadores sem fio que servem como o ponto central de conexão para os outros dispositivos da rede. Eles gerenciam o tráfego de dados entre os dispositivos e permitem o acesso à internet.</p>
-        </div>
-        <div class="device-item">
-            <strong>Laptop-PT (Laptop0 e Laptop1):</strong>
-            <p>Laptops conectados via Wi-Fi ao roteador, que podem ser usados para navegar na internet, acessar serviços em nuvem, e outras atividades de computação.</p>
-        </div>
-        <div class="device-item">
-            <strong>PC-PT (PC0 e PC1):</strong>
-            <p>Computadores de mesa conectados à rede (via cabo) para atividades como navegação, trabalho, ou uso de software.</p>
-        </div>
-        <div class="device-item">
-            <strong>SMARTPHONE-PT (Smartphone3, Smartphone3(1), Smartphone3(2)):</strong>
-            <p>Representações de smartphones conectados via Wi-Fi ao roteador. Esses dispositivos podem estar sendo usados para comunicação (como redes sociais ou mensagens), navegação, ou controle de dispositivos inteligentes.</p>
-        </div>
-        <div class="device-item">
-            <strong>TV-PT (TV5, TV6):</strong>
-            <p>Televisores conectados à rede, provavelmente usados para streaming de vídeos ou outras atividades relacionadas ao entretenimento.</p>
-        </div>
-        <div class="device-item">
-            <strong>TabletPC-PT (Tablet PC1):</strong>
-            <p>Um tablet conectado via Wi-Fi, usado para navegação, leitura, ou controle de outros dispositivos da casa.</p>
-        </div>
-    </div>
-    <h2>Custos</h2>
-    <div>
-        <iframe src="cenario1.html" class="styled-iframe"></iframe>
-    </div>
-</div>
-<hr>
+    <hr>
 
     <!-- Segundo Cenário -->
-<div class="scenario-container" id="cenario_comercial">
-    <h1>Cenário Comercial</h1>
-    <a href="image-cenario2.png" download>
-        <button class="button-download">Baixar Imagem</button>
-    </a>
-    <div>
-        <img src="image-cenario2.png" alt="Descrição da imagem" class="imagem-cenario">
-    </div>
-    
-    <h2 class="titulo-descricao">Descrição de Cada Aparelho do Cenário Comercial:</h2>
-    <div class="device-description">
-        <div class="device-item">
-            <strong>PC-PT (PC0 a PC12):</strong>
-            <p>São computadores para uso no mercado, incluindo RH, financeiro e caixa, todos conectados à rede. Os computadores de PC0 a PC4 estão organizados em "caixas" (caixa 1, caixa 2, etc.), sugerindo estações de trabalho ou terminais em uma organização. Já os outros PCs, 3 no RH e 4 no contas a pagar.</p>
+    <div class="scenario-container" id="cenario_comercial">
+        <h1>Cenário Comercial</h1>
+        <a href="image-cenario2.png" download>
+            <button class="button-download">Baixar Imagem</button>
+        </a>
+        <div>
+            <img src="image-cenario2.png" alt="Descrição da imagem" class="imagem-cenario">
         </div>
-        <div class="device-item">
-            <strong>Webcam IoT (IoT0, IoT1, IoT2, IoT3, IoT4):</strong>
-            <p>Câmeras conectadas à rede, usadas para monitoramento de segurança ou outras funções relacionadas à captura de vídeo ao vivo do mercado.</p>
+        
+        <h2 class="titulo-descricao">Descrição de Cada Aparelho do Cenário Comercial:</h2>
+        <div class="device-description">
+            <div class="device-item">
+                <strong>PC-PT (PC0 a PC12):</strong>
+                <p>São computadores para uso no mercado, incluindo RH, financeiro e caixa, todos conectados à rede. Os computadores de PC0 a PC4 estão organizados em "caixas" (caixa 1, caixa 2, etc.), sugerindo estações de trabalho ou terminais em uma organização. Já os outros PCs, 3 no RH e 4 no contas a pagar.</p>
+            </div>
+            <div class="device-item">
+                <strong>Webcam IoT (IoT0, IoT1, IoT2, IoT3, IoT4):</strong>
+                <p>Câmeras conectadas à rede, usadas para monitoramento de segurança ou outras funções relacionadas à captura de vídeo ao vivo do mercado.</p>
+            </div>
+            <div class="device-item">
+                <strong>Switch (2960-24TT):</strong>
+                <p>Um switch que interconecta os PCs de caixa 1 a caixa 5 e o servidor. Ele permite a comunicação entre esses dispositivos em uma rede local (LAN).</p>
+            </div>
+            <div class="device-item">
+                <strong>Server-PT (Server0):</strong>
+                <p>Um servidor que pode estar gerenciando a rede, armazenando dados ou executando funções críticas, como serviços de aplicação ou arquivos.</p>
+            </div>
+            <div class="device-item">
+                <strong>Wireless Router (WRT300N):</strong>
+                <p>Roteador sem fio que conecta os PCs e câmeras sem fio à rede, proporcionando conectividade à internet e/ou à rede local.</p>
+            </div>
         </div>
-        <div class="device-item">
-            <strong>Switch (2960-24TT):</strong>
-            <p>Um switch que interconecta os PCs de caixa 1 a caixa 5 e o servidor. Ele permite a comunicação entre esses dispositivos em uma rede local (LAN).</p>
-        </div>
-        <div class="device-item">
-            <strong>Server-PT (Server0):</strong>
-            <p>Um servidor que pode estar gerenciando a rede, armazenando dados ou executando funções críticas, como serviços de aplicação ou arquivos.</p>
-        </div>
-        <div class="device-item">
-            <strong>Wireless Router (WRT300N):</strong>
-            <p>Roteador sem fio que conecta os PCs e câmeras sem fio à rede, proporcionando conectividade à internet e/ou à rede local.</p>
-        </div>
-    </div>
 
-    <h2>Custos</h2>
-    <div class="iframe-container">
-        <iframe src="cenario2.html" class="styled-iframe"></iframe>
+        <h2>Custos</h2>
+        <div class="iframe-container">
+            <iframe src="cenario2.html" class="styled-iframe"></iframe>
+        </div>
     </div>
-</div>
-
 
     <footer>
         <p>&copy; 2024 TechConnect. Todos os direitos reservados.</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

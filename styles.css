@@ -308,7 +308,7 @@ body {
 
 .styled-iframe {
     width: 100%;
-    height: 400px; /* Ajuste conforme necessário */
+    height: 490px; /* Ajuste conforme necessário */
     border: none; /* Remove borda padrão */
     border-radius: 10px; /* Bordas arredondadas do iframe */
 }
@@ -371,4 +371,36 @@ footer {
     color: #000000;
     background-color: #ffffff; /* Cor ao passar o mouse */
     transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+.iframe-slide {
+    width: 100%;
+    height: 800px;
+}
+
+ /* Estilo para ajustar o iframe ao tamanho da página */
+ iframe {
+    width: 100vw;
+    height: 100vh;
+    border: none; /* Remove bordas do iframe */
+}
+#iframe-section {
+    position: relative; /* Necessário para o posicionamento absoluto do botão */
+}
+button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #EAE0D5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute; /* Para posicionar o botão */
+    top: 10px; /* Ajuste a posição vertical */
+    right: 10px; /* Ajuste a posição horizontal */
+    z-index: 10; /* Para garantir que o botão fique acima do iframe */
+}
+
+button:hover {
+    transform: scale(1.5); /* Aumenta o botão 50% */
 }
